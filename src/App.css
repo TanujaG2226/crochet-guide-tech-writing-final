@@ -14,11 +14,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .app {
   background-color: white;
+
 }
 
 /* NAVBAR */
@@ -120,3 +121,22 @@
 .hero-btn:hover {
   background-color: var(--purple-200);
 }
+
+/* citation page */
+#references {
+  margin-top: 2rem;
+}
+
+#references h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.reference {
+  margin-left: 2rem;
+  text-indent: -2rem;        /* APA hanging indent */
+  margin-bottom: 1rem;       /* spacing between entries */
+  line-height: 1.6;          /* comfortable reading */
+  max-width: 800px;          /* optional: keeps line length readable */
+}
+

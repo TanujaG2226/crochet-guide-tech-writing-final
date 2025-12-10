@@ -3,6 +3,8 @@ import "./App.css";
 import Home from "./pages/Home.jsx";
 import Guide from "./pages/Guide.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
+import Analysis from "./pages/Analysis.jsx";
+import Citations from "./pages/Citations.jsx";
 
 function App() {
   return (
@@ -26,9 +28,25 @@ function App() {
               "nav-link" + (isActive ? " active" : "")
             }
           >
-            Guide
+            General
           </NavLink>
 
+          <NavLink
+            to="/analysis"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
+            Granny Square vs Amigurumi
+          </NavLink>
+          <NavLink
+            to="/citation"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
+            Work Citied
+          </NavLink>
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -44,7 +62,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/guide" element={<Guide />} />
+        <Route path="/analysis" element={<Analysis />} />
         <Route path="/about" element={<AboutMe />} />
+        <Route path="/citation" element={<Citations />} />
       </Routes>
     </div>
   );
