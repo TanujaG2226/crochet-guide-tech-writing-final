@@ -6,6 +6,7 @@ import dino from "../pictures/dino.JPEG";
 import flowers from "../pictures/flowers.JPEG";
 import flask from "../pictures/mini-flask.JPEG";
 import angel from "../pictures/sunny-angels.JPEG";
+import scarf from "../pictures/scarf.JPEG";
 
 function AboutMe() {
   const photos = [
@@ -14,6 +15,7 @@ function AboutMe() {
     { src: flowers, alt: "Crochet flowers" },
     { src: flask, alt: "Mini crochet flask" },
     { src: angel, alt: "Crochet sunny angels" },
+    { src: scarf, alt: "Crochet film roll scaft" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
