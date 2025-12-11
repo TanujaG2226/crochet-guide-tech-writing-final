@@ -51,6 +51,17 @@ function AboutMe() {
             is so much fun and a great way to spend time reflecting.
           </p>
           <br />
+          <p>
+            Feel free to contact me through{" "}
+            <a
+              href="https://www.linkedin.com/in/tanuja-gunapooti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            !
+          </p>
         </div>
 
         <figure className="author-photo">
