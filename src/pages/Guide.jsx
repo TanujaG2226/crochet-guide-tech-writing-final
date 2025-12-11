@@ -1,9 +1,14 @@
 import "../App.css";
+import hookPic from "../pictures/hook-anatomy.jpg";
+import slip from "../pictures/single-crochet.png";
+import single from "../pictures/Single-Crochet.jpg";
+import hdc from "../pictures/hdc.png";
+import double from "../pictures/double.png";
 
 function Guide() {
   return (
     <section className="page-wrapper">
-      <div className="intro">
+      <div className="section-block intro">
         <h1>Introduction</h1>
         <p>
           A few years ago, while I was scrolling on my phone, I stumbled upon a
@@ -38,7 +43,7 @@ function Guide() {
           journey and enjoy the process of learning something new.
         </p>{" "}
       </div>
-      <div className="history">
+      <div className="section-block history">
         <h1>History</h1>
         <p>
           The exact origins of crocheting are tough to pin down because fibers
@@ -72,7 +77,7 @@ function Guide() {
           years, the craft has continued to grow in popularity around the world.
         </p>
       </div>
-      <div className="General Info">
+      <div className="section-block general-info">
         <h1>General Crochet Information</h1>
         <h2>Hook Types</h2>
         <p>
@@ -83,15 +88,28 @@ function Guide() {
         <br></br>
         <p>
           The <strong> handle</strong> gives your fingers a place to rest and
-          grip the hook. The
-          <strong>shaft</strong> is where the yarn loops as you create stitches,
-          and its diameter determines the hook size (for example, a 4.5 mm shaft
-          means the hook is 4.5 mm). The <strong>throat</strong> connects the
-          shaft and the tip, tapering in to catch the yarn and guide it smoothly
-          through stitches. Without this part, moving the yarn through your work
-          would be way harder. Finally, the <strong>tip</strong> is what you
-          insert into each stitch as you crochet.
+          grip the hook. The <strong>shaft</strong> is where the yarn loops as
+          you create stitches, and its diameter determines the hook size (for
+          example, a 4.5 mm shaft means the hook is 4.5 mm). The{" "}
+          <strong>throat</strong> connects the shaft and the tip, tapering in to
+          catch the yarn and guide it smoothly through stitches. Without this
+          part, moving the yarn through your work would be way harder. Finally,
+          the <strong>tip</strong> is what you insert into each stitch as you
+          crochet.
         </p>
+        <figure className="figure">
+          <img src={hookPic} alt="Crochet hook anatomy" />
+          <figcaption>
+            <strong>Figure 1:</strong> Hook Anatomy-
+            <a
+              href="https://www.prettydarnadorable.com/2020/02/27/beginners-guide-to-crochet-hooks/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
         <br></br>
         <p>
           Hook size depends on the yarn you’re using and the look you want for
@@ -156,9 +174,25 @@ function Guide() {
         <p>
           The slip stitch is one of the simplest and most common stitches,
           especially for finishing a piece. To make one, insert your hook into
-          the next stitch, yarn over, and pull the yarn through the stitch and
-          the active loop on your hook in a single motion.
+          the next stitch, yarn over (wrap the yarn around the hook once), and
+          pull the yarn through the stitch and the active loop (the loop that is
+          on your hook before creating the stitch)on your hook in a single
+          motion.
         </p>
+        <figure className="figure">
+          <img src={slip} alt="Slip Stitch" />
+          <figcaption>
+            <strong>Figure 2:</strong> How to do a Slip Stitch-
+            <a
+              href="https://smart.dhgate.com/mastering-the-slip-stitch-in-crochet-a-step-by-step-guide-for-smooth-professional-finishes/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
+
         <h3>Single Crochet</h3>
         <p>
           The single crochet is one of the stitches you’ll use constantly. Start
@@ -168,6 +202,19 @@ function Guide() {
           over again and pull through both loops. That completes the stitch and
           leaves one active loop on your hook.
         </p>
+        <figure className="figure">
+          <img src={single} alt="Single Crochet" />
+          <figcaption>
+            <strong>Figure 3:</strong> How to do a Single Crochet-
+            <a
+              href="https://crochettoplay.com/how-to-single-crochet/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
         <br></br>
         <p>
           This pattern of inserting and yarning over is what is used to create
@@ -184,6 +231,20 @@ function Guide() {
           time and avoid tugging too hard. You can practice and undue the stitch
           as many times as you need to until it looks right.
         </p>
+        <figure className="figure">
+          <img src={hdc} alt="Half-Double Crochet" />
+          <figcaption>
+            <strong>Figure 4:</strong> How to do a Half-Double Crochet-
+            <a
+              href="https://mycrochetspace.com/half-double-crochet/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
+
         <h3>Double Crochet</h3>
         <p>
           The double crochet begins the same way as the half-double. Yarn over,
@@ -193,6 +254,20 @@ function Guide() {
           Yarn over one last time and pull through those two loops to finish the
           stitch.
         </p>
+        <figure className="figure">
+          <img src={double} alt="Double Crochet" />
+          <figcaption>
+            <strong>Figure 5:</strong> How to do a Double Crochet-
+            <a
+              href="https://sarahmaker.com/double-crochet/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
+
         <br></br>
         <p>
           By knowing these few basic stitches, you should be able to start (and

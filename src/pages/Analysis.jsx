@@ -1,7 +1,11 @@
+import "../App.css";
+import granny from "../pictures/granny-s.jpg";
+import ami from "../pictures/ami.jpg";
+
 function Analysis() {
   return (
     <section className="page-wrapper">
-      <div classname="which">
+      <div className="section-block which">
         <h1>Which Crochet Project Should You Start With?</h1>
         <p>
           Now that you have a basic understanding of crochet, the next big
@@ -11,7 +15,7 @@ function Analysis() {
           factors.
         </p>
       </div>
-      <div className="granny-squares">
+      <div className="section-block granny-squares">
         <h2>Granny Squares</h2>
         <p>
           The granny square has existed since the late 1800s and has continued
@@ -24,6 +28,20 @@ function Analysis() {
           crochet (Elliott, Why A Granny Square is the Perfect First Crochet
           Project, 2025).
         </p>
+        <figure className="figure">
+          <img src={granny} alt="Granny Square" />
+          <figcaption>
+            <strong>Figure 6:</strong> Granny Square-
+            <a
+              href="https://hobbii.com/products/hp-1005654-hobbii-granny-square-basic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
+
         <h3>Cost</h3>
         <h4>Yarn Types</h4>
         <p>
@@ -101,31 +119,31 @@ function Analysis() {
         <br></br>
         <ol>
           <li>
-            1. Having a tension that’s too tight (Elliott, Why A Granny Square
-            is the Perfect First Crochet Project, 2025). When this happens,
+            Having a tension that’s too tight (Elliott, Why A Granny Square is
+            the Perfect First Crochet Project, 2025). When this happens,
             stitches feel stiff, and it might be hard to push your hook through
             stitches. To fix this, all you need to do is loosen your grip on the
             yarn. Try a few stitches with a looser yarn tension.
           </li>
           <li>
-            2. Forgetting the chain spaces (Elliott, Why A Granny Square is the
+            Forgetting the chain spaces (Elliott, Why A Granny Square is the
             Perfect First Crochet Project, 2025). If you forget the chains
             between clusters, it can throw off your corners, resulting in a more
             circular shape than a square one.
           </li>
           <li>
-            3. Not finishing round properly. You need to slip stitch at the end
-            of rounds to keep the square neat and aligned.
+            Not finishing round properly. You need to slip stitch at the end of
+            rounds to keep the square neat and aligned.
           </li>
         </ol>
         <br></br>
         <p>
           You can fix all of these by frogging, undoing stitches on purpose.
-          Gently pull the working yarn to undo your work but go slowly so you
-          don’t unravel more than you meant to. Frogging can be frustrating,
-          especially if you redo the same section a few times. But honestly,
-          it’s just part of learning any craft. Give yourself space to mess up,
-          breathe, and keep going.
+          Gently pull the working yarn (the yarn connected to the spool) to undo
+          your work but go slowly so you don’t unravel more than you meant to.
+          Frogging can be frustrating, especially if you redo the same section a
+          few times. But honestly, it’s just part of learning any craft. Give
+          yourself space to mess up, breathe, and keep going.
         </p>
         <h4>Resources Available</h4>
         <p>
@@ -150,7 +168,7 @@ function Analysis() {
           best of both and end up with a product that you really wanted.{" "}
         </p>
       </div>
-      <div className="amgi">
+      <div className="section-block amgi">
         <h2>Amigurumi</h2>
         <p>
           Amigurumi comes from a Japanese word that roughly means “crocheted or
@@ -158,6 +176,20 @@ function Analysis() {
           creating 3D figures of animals, characters, or literally anything you
           can imagine.
         </p>
+        <figure className="figure">
+          <img src={ami} alt="Amigurumi" />
+          <figcaption>
+            <strong>Figure 7:</strong> Amigurumi-
+            <a
+              href="https://53stitches.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </figcaption>
+        </figure>
+
         <br></br>
         <p>
           Like most of crochet, its exact origins stay a bit blurry, but this
@@ -315,7 +347,7 @@ function Analysis() {
           your skills.{" "}
         </p>
       </div>
-      <div className="comparison">
+      <div className="section-block comparison">
         <h2>The Best Beginner Project</h2>
         <p>Let’s summarize everything we’ve looked at.</p>
         <table>
